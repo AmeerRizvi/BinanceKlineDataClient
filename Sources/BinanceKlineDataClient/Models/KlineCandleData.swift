@@ -21,7 +21,7 @@ public struct KlineCandleData {
     let takerBuyQuoteAssetVolume: String
     let unusedField: String
     
-    init?(jsonArray: [Any]) {
+    public init?(jsonArray: [Any]) {
         guard jsonArray.count == 12 else { return nil }
         self.openTime = jsonArray[0] as? Int ?? 0
         self.openPrice = jsonArray[1] as? String ?? ""
