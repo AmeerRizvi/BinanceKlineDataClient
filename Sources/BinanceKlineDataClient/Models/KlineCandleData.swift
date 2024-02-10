@@ -8,18 +8,18 @@
 import Foundation
 
 public struct KlineCandleData {
-    let openTime: Int
-    let openPrice: String
-    let highPrice: String
-    let lowPrice: String
-    let closePrice: String
-    let volume: String
-    let closeTime: Int
-    let quoteAssetVolume: String
-    let numberOfTrades: Int
-    let takerBuyBaseAssetVolume: String
-    let takerBuyQuoteAssetVolume: String
-    let unusedField: String
+    public let openTime: Int
+    public let openPrice: String
+    public let highPrice: String
+    public let lowPrice: String
+    public let closePrice: String
+    public let volume: String
+    public let closeTime: Int
+    public let quoteAssetVolume: String
+    public let numberOfTrades: Int
+    public let takerBuyBaseAssetVolume: String
+    public let takerBuyQuoteAssetVolume: String
+    public let unusedField: String
     
     public init?(jsonArray: [Any]) {
         guard jsonArray.count == 12 else { return nil }
