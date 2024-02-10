@@ -7,6 +7,8 @@
 import Foundation
 
 public struct BinanceKlineDataClient {
+    public init() {}
+    
     private let baseURL = "https://api.binance.com/api/v3/klines"
     private let urlSession = URLSession.shared
     
