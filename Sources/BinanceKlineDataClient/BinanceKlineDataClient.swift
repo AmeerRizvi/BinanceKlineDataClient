@@ -28,7 +28,7 @@ public struct BinanceKlineDataClient {
     }
     
     @available(macOS 12.0, *)
-    public func fetchCandles(symbol: String, interval: Int? = 1, limit: Int? = 20) async throws -> [KlineCandleData] {
+    public func fetchCandles(symbol: String, interval: String? = "1m", limit: Int? = 20) async throws -> [KlineCandleData] {
         
         var urlString = "\(baseURL)?symbol=\(symbol)"
         if let interval = interval {

@@ -40,3 +40,6 @@ You can fetch data for various trading pairs supported by Binance. For a compreh
 ### Interval and limit
 
 The fetchCandles function requires specifying the symbol, interval, and limit. Interval refers to the duration between data points, and limit specifies the maximum number of data points to fetch.
+
+"1m", "3m", "5m", "15m", "30m", "1h", "2h", "4h", "6h", "8h", "12h",
+    "1d", "3d", "1w", "1M"
